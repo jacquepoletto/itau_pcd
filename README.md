@@ -1,2 +1,5 @@
-# itau_pcd
-# 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
+# Itau PCD
+# Gama Academy - Transformando Talentos para o Futuro
+
+Desafio Cadastro Pessoal - Atração
+Jacqueline Poletto
