@@ -1,0 +1,131 @@
+<!DOCTYPE html">
+<html lang="pt-br">
+<head>
+	<title>Itaú PCD - Jacqueline Poletto</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="styles.css" />	
+	
+	<script src="funcoes_jsavascript.js"></script>
+</head>
+
+<body>
+	<div class="all">
+		<h1 class="title">Cadastro pessoal - Atração</h1>
+		<div class="center-fixed">	
+			<form id="frmCadastro">
+				<label class="required" for="txtNome">Nome</label><br>
+				<input type="text" id="txtNome" placeholder="Digite seu nome completo" required><br>
+
+				<div class="div-inline-flex">
+					<div class="div-margin-right">
+						<label class="required"  for="txtCpf">CPF</label><br>
+						<input type="text" id="txtCpf" placeholder="Digite seu CPF" required><br>
+					</div>
+					<div class="div-margin-right">
+						<label for="txtRg">RG</label><br>
+						<input type="text" id="txtRg" placeholder="Digite seu RG"><br>
+					</div>
+					<div>
+						<fieldset>
+							<legend>Sexo</legend>
+							<div class="div-inline-flex" style="margin-top: 10px;">
+								<input type="radio" name="genero" value="male" id="rdoMasculino" checked>
+								<label for="rdoMasculino" style="margin-left: 10px;">Masculino</label><br>		
+								
+								<input type="radio" name="genero" value="female" id="rdoFeminino">
+								<label for="rdoFeminino" style="margin-left: 10px;">Feminino</label>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				
+				<div class="div-inline-flex">
+					<div class="div-margin-right" style="width: 70%;">
+						<label class="required" for="txtEndereco">Endereço</label><br>
+						<input type="text" id="txtEndereco" placeholder="Digite seu endereço" required><br>
+					</div>
+					<div style="width: 30%;">
+						<label class="required" for="txtNumero">Número</label><br>
+						<input type="text" id="txtNumero" placeholder="Número" required><br>
+					</div>
+				</div>
+
+				<div class="div-inline-flex">
+					<div class="div-margin-right" style="width: 45%;">
+						<label for="txtBairro">Bairro</label><br>
+						<input type="text" id="txtBairro" placeholder="Digite seu bairro"><br>
+					</div>
+					<div class="div-margin-right" style="width: 45%;">
+						<label for="txtCidade">Cidade</label><br>
+						<input type="text" id="txtCidade" placeholder="Digite sua cidade"><br>
+					</div>
+					<div style="width: 10%;">
+						<label for="comboEstado">Estado</label>
+						<select name="comboEstado" id="comboEstado">
+							<option value="AC">AC</option>
+							<option value="AL">AL</option>
+							<option value="AP">AP</option>
+							<option value="AM">AM</option>
+							<option value="BA">BA</option>
+							<option value="CE">CE</option>
+							<option value="DF">DF</option>
+							<option value="ES">ES</option>
+							<option value="GO">GO</option>
+							<option value="MA">MA</option>
+							<option value="MT">MT</option>
+							<option value="MS">MS</option>
+							<option value="MG">MG</option>
+							<option value="PA">PA</option>
+							<option value="PB">PB</option>
+							<option value="PR">PR</option>
+							<option value="PE">PE</option>
+							<option value="PI">PI</option>
+							<option value="RJ">RJ</option>
+							<option value="RS">RS</option>
+							<option value="RO">RO</option>
+							<option value="RR">RR</option>
+							<option value="SC">SC</option>
+							<option value="SP">SP</option>
+							<option value="SE">SE</option>
+							<option value="TO">TO</option>
+						</select>
+					</div>
+				</div>
+
+				
+
+				<div class="div-inline-flex">
+					<div class="div-margin-right">
+						<label for="txtCep">CEP</label><br>
+						<input type="text" id="txtCep" placeholder="Digite seu CEP"><br>
+					</div>
+					<div class="div-margin-right">
+						<label for="txtTelefone">Telefone fixo</label><br>
+						<input type="text" id="txtTelefone" placeholder="(XX) XXXX-XXXX" data-mask="(00) 0000-0000"><br>
+					</div>
+					<div>
+						<label class="required" for="txtCelular">Telefone celular</label><br>
+						<input type="text" id="txtCelular" placeholder="(XX) XXXXX-XXXX" required><br>
+					</div>
+				</div>
+				
+				<input type="submit" name="" id="btnCadastrarSalvar" value="Cadastrar">
+			</form>
+		</div>
+		<table>
+			<caption><h2>Tabela</h2></caption>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>CPF</th>
+					<th>Telefone celular</th>
+					<th>Endereço</th>
+					<th>Ultima Atualização</th>
+				</tr>
+			</thead>
+			<tbody id="tbodyResultados"></tbody>
+			<tfoot></tfoot>
+		</table>
+	</div>
+</body>
+</html>
